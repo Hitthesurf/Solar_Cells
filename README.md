@@ -2,8 +2,8 @@
 Modelling the Movement of Electrons in Solar Cells by numerically solving PDEs by FDM, and by the GDM (Gaussian Disorder Model)
 
 # Running CUDA
-To run the cuda PDE_Solver on a server or local coputer. A NVIDIA graphics card is needed.
-The module is loaded by,
+To run the cuda PDE_Solver.cu(located in Cuda_Training) on a server or local coputer. A NVIDIA graphics card is needed.
+The module is loaded by, (Also applies to PDE_DriftDiffusionEnergy.cu)
 
 module load cuda_location
 
