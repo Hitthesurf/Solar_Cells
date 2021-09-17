@@ -1,0 +1,13 @@
+#version 300 es
+precision highp float;
+out vec2 fragTexCoord;
+in vec3 vertPosition;
+in vec2 texturePos;
+
+
+void main()
+{
+vec4 Pos = vec4(vertPosition, 1.0);
+gl_Position = Pos.xyzw;
+fragTexCoord = vec2(texturePos.x, texturePos.y); //only has 1.0- when reading a texture
+} //This is because the html format of picture has 0,0 at the top left, but sampler starts from bottom left
