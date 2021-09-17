@@ -2,14 +2,14 @@ var Ref_URL = "" //Different to gh-pages allows to test using local server
 
 var x_size;
 var y_size;
-var steps = 1; //steps per frame
+var steps = 50; //steps per frame
 var Play = false;
 var restart = false;
 var All_Data = [];
 
 
 
-/*
+
 var drawfragmentShaderText = 
 [
 '#version 300 es',
@@ -27,9 +27,9 @@ var drawfragmentShaderText =
 '}'
 
 ].join('\n');
-*/
 
-
+//Working on some PDE didn't finiish
+/*
 var drawfragmentShaderText = 
 [
 '#version 300 es',
@@ -75,7 +75,7 @@ return total;
 'FragColor = vec4(Num_Z,-Num_Z,0.0,1.0);',
 '}'
 ].join('\n')
-
+*/
 var Play_Stop = function()
 {
     Play = !Play; 
