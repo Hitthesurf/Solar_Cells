@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title> PDE Solver </title>
+    </head>
+    <body onload="Init()">
+        <canvas id="Game_Of_Life_Grid" width="1000" height="700">
+         Your browser doess not support HTML5
+        </canvas>
+        <br>
+        <button id="btnStartStop">Start/Stop</button>
+        <button id="btnResetGrid">Reset Grid</button>
+        <i>Generations per render = </i>
+        <input type="number" id="numSteps" value="1" style="width: 4em">
+        <i>X_Size = </i>
+        <input type="number" id="numXSize" value="21" style="width: 5em">
+        <i>Y_Size = </i>
+        <input type="number" id="numYSize" value="21" style="width: 5em">
+        <i>Reset to change grid size, </i>
+        <i id="lblCanvas">Canvas Resolution is (,) </i>
+        <i id="lblFPS">, FPS: </i>
+        <br>
+        <button id="btnDownload"> Download </button>
+        
+        
+        <script src="loadfile.js"></script>
+        <script src="app.js"></script>
+        
+    </body>
+</html>
+         
